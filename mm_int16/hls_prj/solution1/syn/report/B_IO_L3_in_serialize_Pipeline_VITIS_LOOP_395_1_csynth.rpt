@@ -1,0 +1,200 @@
+
+
+================================================================
+== Vitis HLS Report for 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_395_1'
+================================================================
+* Date:           Sat Oct 15 11:10:35 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        hls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.650 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   |  min |  max |   Type  |
+    +---------+---------+----------+----------+------+------+---------+
+    |     1027|     1027|  5.135 us|  5.135 us|  1027|  1027|       no|
+    +---------+---------+----------+----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_395_1  |     1025|     1025|         4|          2|          1|   512|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       36|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       91|    -|
+|Register             |        -|     -|      528|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|      528|      127|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |i_V_4_fu_92_p2                    |         +|   0|  0|  17|          10|           1|
+    |ap_block_pp0_stage0_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage1_iter0  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln395_fu_86_p2               |      icmp|   0|  0|  11|          10|          11|
+    |ap_block_pp0_stage1_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  36|          24|          17|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------+----+-----------+-----+-----------+
+    |                 Name                | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                            |  14|          3|    1|          3|
+    |ap_done_int                          |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1              |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_V_3               |   9|          2|   10|         20|
+    |fifo_B_B_IO_L3_in_serialize70_blk_n  |   9|          2|    1|          2|
+    |fifo_B_B_IO_L3_in_serialize70_din    |  14|          3|  256|        768|
+    |gmem_B_blk_n_R                       |   9|          2|    1|          2|
+    |i_V_fu_52                            |   9|          2|   10|         20|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |Total                                |  91|         20|  282|        821|
+    +-------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+-----+----+-----+-----------+
+    |             Name            |  FF | LUT| Bits| Const Bits|
+    +-----------------------------+-----+----+-----+-----------+
+    |ap_CS_fsm                    |    2|   0|    2|          0|
+    |ap_done_reg                  |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg  |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1      |    1|   0|    1|          0|
+    |i_V_fu_52                    |   10|   0|   10|          0|
+    |icmp_ln395_reg_135           |    1|   0|    1|          0|
+    |p_Result_1_reg_144           |  256|   0|  256|          0|
+    |trunc_ln674_reg_139          |  256|   0|  256|          0|
+    +-----------------------------+-----+----+-----+-----------+
+    |Total                        |  528|   0|  528|          0|
+    +-----------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------------+-----+-----+------------+------------------------------------------------+--------------+
+|               RTL Ports              | Dir | Bits|  Protocol  |                  Source Object                 |    C Type    |
++--------------------------------------+-----+-----+------------+------------------------------------------------+--------------+
+|ap_clk                                |   in|    1|  ap_ctrl_hs|  B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_395_1|  return value|
+|ap_rst                                |   in|    1|  ap_ctrl_hs|  B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_395_1|  return value|
+|ap_start                              |   in|    1|  ap_ctrl_hs|  B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_395_1|  return value|
+|ap_done                               |  out|    1|  ap_ctrl_hs|  B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_395_1|  return value|
+|ap_idle                               |  out|    1|  ap_ctrl_hs|  B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_395_1|  return value|
+|ap_ready                              |  out|    1|  ap_ctrl_hs|  B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_395_1|  return value|
+|m_axi_gmem_B_AWVALID                  |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWREADY                  |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWADDR                   |  out|   64|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWID                     |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWLEN                    |  out|   32|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWSIZE                   |  out|    3|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWBURST                  |  out|    2|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWLOCK                   |  out|    2|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWCACHE                  |  out|    4|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWPROT                   |  out|    3|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWQOS                    |  out|    4|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWREGION                 |  out|    4|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_AWUSER                   |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_WVALID                   |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_WREADY                   |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_WDATA                    |  out|  512|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_WSTRB                    |  out|   64|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_WLAST                    |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_WID                      |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_WUSER                    |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARVALID                  |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARREADY                  |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARADDR                   |  out|   64|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARID                     |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARLEN                    |  out|   32|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARSIZE                   |  out|    3|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARBURST                  |  out|    2|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARLOCK                   |  out|    2|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARCACHE                  |  out|    4|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARPROT                   |  out|    3|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARQOS                    |  out|    4|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARREGION                 |  out|    4|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_ARUSER                   |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_RVALID                   |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_RREADY                   |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_RDATA                    |   in|  512|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_RLAST                    |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_RID                      |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_RUSER                    |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_RRESP                    |   in|    2|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_BVALID                   |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_BREADY                   |  out|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_BRESP                    |   in|    2|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_BID                      |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|m_axi_gmem_B_BUSER                    |   in|    1|       m_axi|                                          gmem_B|       pointer|
+|fifo_B_B_IO_L3_in_serialize70_din     |  out|  256|     ap_fifo|                   fifo_B_B_IO_L3_in_serialize70|       pointer|
+|fifo_B_B_IO_L3_in_serialize70_full_n  |   in|    1|     ap_fifo|                   fifo_B_B_IO_L3_in_serialize70|       pointer|
+|fifo_B_B_IO_L3_in_serialize70_write   |  out|    1|     ap_fifo|                   fifo_B_B_IO_L3_in_serialize70|       pointer|
+|sext_ln395                            |   in|   58|     ap_none|                                      sext_ln395|        scalar|
++--------------------------------------+-----+-----+------------+------------------------------------------------+--------------+
+

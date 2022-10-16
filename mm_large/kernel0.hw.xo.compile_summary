@@ -1,0 +1,91 @@
+<ENTRY>
+{
+ "thisFile": "/home/jiaqiyin/autosa_output/autosa_output/mm_large/kernel0.hw.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Sep 29 09:27:38 2022",
+ "timestampMillis": "1664465258721",
+ "buildStep": {
+  "cmdId": "1383e95a-4271-4d7e-a44b-3ce1f6fb1bb8",
+  "name": "v++",
+  "logFile": "/home/jiaqiyin/autosa_output/autosa_output/mm_large/_x/kernel0.hw/kernel0.hw.steps.log",
+  "commandLine": "/mnt/raid10/tools/Vitis/2021.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --vivado.prop \"run.impl_1.{STEPS.PLACE_DESIGN.ARGS.MORE OPTIONS}={-retiming}\" --vivado.prop run.impl_1.STEPS.PHYS_OPT_DESIGN.IS_ENABLED=true --vivado.prop run.impl_1.STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED=true --vivado.param project.writeIntermediateCheckpoints=1 --advanced.misc \"report=type report_utilization name synth_report_utilization_summary steps {synth_design} runs {__KERNEL__} options {}\" --advanced.misc \"report=type report_utilization name impl_report_utilization_init_design_summary steps {init_design} runs {impl_1} options {}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_init_design_summary steps {init_design} runs {impl_1} options {-max_paths 10}\" --advanced.param \"compiler.reportFailfast=pre_opt_design {__KERNEL_NAMES__} post_opt_design {__OCL_TOP__} post_route_design {__SLR__}\" --advanced.misc \"report=type report_io name impl_report_io_place_design_summary steps {place_design} runs {impl_1} options {}\" --advanced.misc \"report=type report_utilization name impl_report_utilization_place_design_summary steps {place_design} runs {impl_1} options {}\" --advanced.misc \"report=type report_control_sets name impl_report_control_sets_place_design_summary steps {place_design} runs {impl_1} options {-verbose}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_place_design_summary steps {place_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_drc name impl_report_drc_route_design_summary steps {route_design} runs {impl_1} options {}\" --advanced.misc \"report=type report_methodology name impl_report_methodology_route_design_summary steps {route_design} runs {impl_1} options {}\" --advanced.misc \"report=type report_power name impl_report_power_route_design_summary steps {route_design} runs {impl_1} options {}\" --advanced.misc \"report=type report_route_status name impl_report_route_status_route_design_summary steps {route_design} runs {impl_1} options {}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_clock_utilization name impl_report_clock_utilization_route_design_summary steps {route_design} runs {impl_1} options {}\" --advanced.misc \"report=type report_bus_skew name impl_report_bus_skew_route_design_summary steps {route_design} runs {impl_1} options {-warn_on_violation}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -s -t hw --platform xilinx_u250_xdma_201830_2 -R2 -O3 --kernel_frequency 300 --vivado.prop=run.impl_1.STRATEGY=Performance_EarlyBlockPlacement -c -k kernel0 -o kernel0.hw.xo src/kernel_kernel.cpp ",
+  "args": [
+   "-s",
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u250_xdma_201830_2",
+   "-R2",
+   "-O3",
+   "--kernel_frequency",
+   "300",
+   "--vivado.prop=run.impl_1.STRATEGY=Performance_EarlyBlockPlacement",
+   "-c",
+   "-k",
+   "kernel0",
+   "-o",
+   "kernel0.hw.xo",
+   "src/kernel_kernel.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/jiaqiyin/autosa_output/autosa_output/mm_large"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Sep 29 09:27:38 2022",
+ "timestampMillis": "1664465258722",
+ "status": {
+  "cmdId": "1383e95a-4271-4d7e-a44b-3ce1f6fb1bb8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Sep 29 09:27:42 2022",
+ "timestampMillis": "1664465262336",
+ "report": {
+  "path": "/home/jiaqiyin/autosa_output/autosa_output/mm_large/_x/reports/kernel0.hw/v++_compile_kernel0.hw_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Sep 29 09:27:42 2022",
+ "timestampMillis": "1664465262338",
+ "report": {
+  "path": "/home/jiaqiyin/autosa_output/autosa_output/mm_large/_x/v++_compile_kernel0.hw_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Sep 29 09:27:42 2022",
+ "timestampMillis": "1664465262341",
+ "status": {
+  "cmdId": "1383e95a-4271-4d7e-a44b-3ce1f6fb1bb8",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

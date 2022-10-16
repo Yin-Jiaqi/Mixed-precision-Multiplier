@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'C_drain_IO_L1_out_boundary_wrapper514'" level="0">
+<item name = "Date">Sat Oct 15 12:49:48 2022
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
+<item name = "Project">hls_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu200-fsgd2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.165 ns, 1.35 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">4497, 4497, 22.485 us, 22.485 us, 4497, 4497, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_C_drain_IO_L1_out_boundary_wrapper514_Pipeline_VIT_1_fu_56">C_drain_IO_L1_out_boundary_wrapper514_Pipeline_VIT_1, 258, 258, 1.290 us, 1.290 us, 258, 258, no</column>
+<column name="grp_C_drain_IO_L1_out_boundary_wrapper514_Pipeline_VIT_fu_63">C_drain_IO_L1_out_boundary_wrapper514_Pipeline_VIT, 18, 18, 90.000 ns, 90.000 ns, 18, 18, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_1036_1_VITIS_LOOP_1037_2">4496, 4496, 281, -, -, 16, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

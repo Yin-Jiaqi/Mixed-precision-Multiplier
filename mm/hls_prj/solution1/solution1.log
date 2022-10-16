@@ -1,0 +1,1451 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1464] Running solution command: config_compile -name_max_length=50
+INFO: [XFORM 203-1161] The maximum of name length is set into 50.
+INFO: [HLS 200-1510] Running: set_part xcu200-fsgd2104-2-e 
+INFO: [XFORM 203-1161] The maximum of name length is set into 50.
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_compile -name_max_length 50 
+INFO: [XFORM 203-1161] The maximum of name length is set into 50.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.13 seconds. CPU system time: 0.15 seconds. Elapsed time: 2.19 seconds; current allocated memory: 251.383 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.608 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/kernel_kernel.cpp' ... 
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:161:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:163:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:258:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:260:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:506:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:508:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:603:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:605:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:702:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:950:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:997:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1201:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1204:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1207:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1210:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1213:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1216:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1219:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1222:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1225:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1228:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1231:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1234:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1237:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1240:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1243:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1246:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1249:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1252:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1255:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1258:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1261:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1264:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1267:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1270:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1273:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1276:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1279:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1282:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1285:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1288:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1291:9
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: src/kernel_kernel.cpp:1188:9
+WARNING: [HLS 207-5301] unused parameter 'print': /mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+WARNING: [HLS 207-5301] unused parameter 'c0': src/kernel_kernel.cpp:48:42
+WARNING: [HLS 207-5301] unused parameter 'c1': src/kernel_kernel.cpp:48:50
+WARNING: [HLS 207-5301] unused parameter 'c2': src/kernel_kernel.cpp:48:58
+WARNING: [HLS 207-5301] unused parameter 'c0': src/kernel_kernel.cpp:89:42
+WARNING: [HLS 207-5301] unused parameter 'c1': src/kernel_kernel.cpp:89:50
+WARNING: [HLS 207-5301] unused parameter 'c2': src/kernel_kernel.cpp:89:58
+WARNING: [HLS 207-5301] unused parameter 'c0': src/kernel_kernel.cpp:129:51
+WARNING: [HLS 207-5301] unused parameter 'c1': src/kernel_kernel.cpp:129:59
+WARNING: [HLS 207-5301] unused parameter 'c2': src/kernel_kernel.cpp:129:67
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:161:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:163:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:258:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:260:9
+WARNING: [HLS 207-5301] unused parameter 'c0': src/kernel_kernel.cpp:393:42
+WARNING: [HLS 207-5301] unused parameter 'c1': src/kernel_kernel.cpp:393:50
+WARNING: [HLS 207-5301] unused parameter 'c2': src/kernel_kernel.cpp:393:58
+WARNING: [HLS 207-5301] unused parameter 'c0': src/kernel_kernel.cpp:434:42
+WARNING: [HLS 207-5301] unused parameter 'c1': src/kernel_kernel.cpp:434:50
+WARNING: [HLS 207-5301] unused parameter 'c2': src/kernel_kernel.cpp:434:58
+WARNING: [HLS 207-5301] unused parameter 'c0': src/kernel_kernel.cpp:474:51
+WARNING: [HLS 207-5301] unused parameter 'c1': src/kernel_kernel.cpp:474:59
+WARNING: [HLS 207-5301] unused parameter 'c2': src/kernel_kernel.cpp:474:67
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:506:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:508:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:603:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:605:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:702:9
+WARNING: [HLS 207-5301] unused parameter 'c0': src/kernel_kernel.cpp:837:58
+WARNING: [HLS 207-5301] unused parameter 'c1': src/kernel_kernel.cpp:837:66
+WARNING: [HLS 207-5301] unused parameter 'c0': src/kernel_kernel.cpp:876:58
+WARNING: [HLS 207-5301] unused parameter 'c1': src/kernel_kernel.cpp:876:66
+WARNING: [HLS 207-5301] unused parameter 'c0': src/kernel_kernel.cpp:918:67
+WARNING: [HLS 207-5301] unused parameter 'c1': src/kernel_kernel.cpp:918:75
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:950:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:997:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1201:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1204:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1207:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1210:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1213:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1216:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1219:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1222:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1225:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1228:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1231:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1234:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1237:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1240:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1243:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1246:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1249:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1252:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1255:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1258:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1261:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1264:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1267:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1270:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1273:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1276:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1279:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1282:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1285:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1288:9
+WARNING: [HLS 207-5514] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: src/kernel_kernel.cpp:1291:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 8.06 seconds. CPU system time: 0.81 seconds. Elapsed time: 8.86 seconds; current allocated memory: 255.202 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::write(ap_uint<512> const&)' into 'A_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&)' (src/kernel_kernel.cpp:42:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::read(ap_uint<512>&)' into 'hls::stream<ap_uint<512>, 0>::read()' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::write(ap_uint<512> const&)' into 'A_IO_L3_in(hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&)' (src/kernel_kernel.cpp:24:32)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::read()' into 'A_IO_L3_in(hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&)' (src/kernel_kernel.cpp:22:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::write(ap_uint<512> const&)' into 'A_IO_L2_in_inter_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&, bool)' (src/kernel_kernel.cpp:120:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::read()' into 'A_IO_L2_in_inter_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&, bool)' (src/kernel_kernel.cpp:118:31)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::read()' into 'A_IO_L2_in_inter_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&, bool)' (src/kernel_kernel.cpp:106:31)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::write(ap_uint<64> const&)' into 'A_IO_L2_in_intra_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<64>, 0>&, bool)' (src/kernel_kernel.cpp:80:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::read()' into 'A_IO_L2_in_inter_trans_boundary(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<512>, 0>&, bool)' (src/kernel_kernel.cpp:146:31)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::write(ap_uint<512> const&)' into 'B_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&)' (src/kernel_kernel.cpp:387:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::write(ap_uint<512> const&)' into 'B_IO_L3_in(hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&)' (src/kernel_kernel.cpp:369:32)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::read()' into 'B_IO_L3_in(hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&)' (src/kernel_kernel.cpp:367:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::write(ap_uint<512> const&)' into 'B_IO_L2_in_inter_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&, bool)' (src/kernel_kernel.cpp:465:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::read()' into 'B_IO_L2_in_inter_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&, bool)' (src/kernel_kernel.cpp:463:31)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::read()' into 'B_IO_L2_in_inter_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<512>, 0>&, hls::stream<ap_uint<512>, 0>&, bool)' (src/kernel_kernel.cpp:451:31)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::write(ap_uint<64> const&)' into 'B_IO_L2_in_intra_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<64>, 0>&, bool)' (src/kernel_kernel.cpp:425:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::read()' into 'B_IO_L2_in_inter_trans_boundary(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<512>, 0>&, bool)' (src/kernel_kernel.cpp:491:31)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::read(ap_uint<64>&)' into 'hls::stream<ap_uint<64>, 0>::read()' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::write(ap_uint<64> const&)' into 'PE(int, int, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:760:30)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::write(ap_uint<64> const&)' into 'PE(int, int, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:752:30)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'PE(int, int, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:745:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::read()' into 'PE(int, int, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:730:41)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::read()' into 'PE(int, int, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:719:41)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::read()' into 'A_PE_dummy_in(int, int, hls::stream<ap_uint<64>, 0>&)' (src/kernel_kernel.cpp:802:37)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::read()' into 'B_PE_dummy_in(int, int, hls::stream<ap_uint<64>, 0>&)' (src/kernel_kernel.cpp:828:37)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::read()' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read()' into 'C_drain_IO_L1_out_intra_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<float, 0>&)' (src/kernel_kernel.cpp:857:41)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::write(ap_uint<128> const&)' into 'C_drain_IO_L1_out_inter_trans_boundary(int, int, int, int, ap_uint<128> (*) [2], hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:936:30)
+INFO: [HLS 214-131] Inlining function 'C_drain_IO_L1_out_inter_trans_boundary(int, int, int, int, ap_uint<128> (*) [2], hls::stream<ap_uint<128>, 0>&)' into 'C_drain_IO_L1_out_boundary(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:1013:7)
+INFO: [HLS 214-131] Inlining function 'C_drain_IO_L1_out_intra_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<float, 0>&)' into 'C_drain_IO_L1_out_boundary(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:1005:7)
+INFO: [HLS 214-131] Inlining function 'C_drain_IO_L1_out_boundary(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)' into 'C_drain_IO_L1_out_boundary_wrapper(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:1028:3)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::read(ap_uint<128>&)' into 'hls::stream<ap_uint<128>, 0>::read()' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::write(ap_uint<128> const&)' into 'C_drain_IO_L1_out_inter_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:908:30)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::read()' into 'C_drain_IO_L1_out_inter_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:906:39)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::write(ap_uint<128> const&)' into 'C_drain_IO_L1_out_inter_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:894:30)
+INFO: [HLS 214-131] Inlining function 'C_drain_IO_L1_out_inter_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' into 'C_drain_IO_L1_out(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:966:7)
+INFO: [HLS 214-131] Inlining function 'C_drain_IO_L1_out_intra_trans(int, int, int, int, ap_uint<128> (*) [2], hls::stream<float, 0>&)' into 'C_drain_IO_L1_out(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&)' (src/kernel_kernel.cpp:958:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::write(ap_uint<128> const&)' into 'C_drain_IO_L2_out_boundary(int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:1114:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::read()' into 'C_drain_IO_L2_out_boundary(int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:1112:51)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::write(ap_uint<128> const&)' into 'C_drain_IO_L2_out(int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:1078:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::read()' into 'C_drain_IO_L2_out(int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:1076:45)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::write(ap_uint<128> const&)' into 'C_drain_IO_L2_out(int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:1061:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::read()' into 'C_drain_IO_L2_out(int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:1059:51)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::write(ap_uint<128> const&)' into 'C_drain_IO_L3_out(hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:1148:34)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::read()' into 'C_drain_IO_L3_out(hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:1146:49)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::read()' into 'C_drain_IO_L3_out_serialize(ap_uint<512>*, hls::stream<ap_uint<128>, 0>&)' (src/kernel_kernel.cpp:1171:41)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1193:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1195:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1197:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1199:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1202:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1205:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1208:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1211:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<512>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1214:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1217:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1220:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1223:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1226:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1229:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1232:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1235:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1238:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1241:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1244:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1247:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1250:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1253:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1256:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1259:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1262:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1289:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1286:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1283:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1280:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1277:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1274:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1271:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1268:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<128>, 0>::stream()' into 'kernel0(ap_uint<512>*, ap_uint<512>*, ap_uint<512>*)' (src/kernel_kernel.cpp:1265:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_860_3' (src/kernel_kernel.cpp:860:27) in function 'C_drain_IO_L1_out' completely with a factor of 4 (src/kernel_kernel.cpp:945:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_860_3' (src/kernel_kernel.cpp:860:27) in function 'C_drain_IO_L1_out_boundary_wrapper' completely with a factor of 4 (src/kernel_kernel.cpp:1027:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_720_7' (src/kernel_kernel.cpp:720:37) in function 'PE' completely with a factor of 2 (src/kernel_kernel.cpp:693:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_731_8' (src/kernel_kernel.cpp:731:37) in function 'PE' completely with a factor of 2 (src/kernel_kernel.cpp:693:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_740_9' (src/kernel_kernel.cpp:740:35) in function 'PE' completely with a factor of 2 (src/kernel_kernel.cpp:693:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_418_4' (src/kernel_kernel.cpp:418:29) in function 'B_IO_L2_in_intra_trans' completely with a factor of 8 (src/kernel_kernel.cpp:393:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_73_4' (src/kernel_kernel.cpp:73:28) in function 'A_IO_L2_in_intra_trans' completely with a factor of 8 (src/kernel_kernel.cpp:48:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'C' with non-compact mode in 512-bits (src/kernel_kernel.cpp:1181:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'B' with non-compact mode in 512-bits (src/kernel_kernel.cpp:1181:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'A' with non-compact mode in 512-bits (src/kernel_kernel.cpp:1181:0)
+WARNING: [HLS 214-281] Estimating pipelined loop 'VITIS_LOOP_1164_1' (src/kernel_kernel.cpp:1164:21) in function 'C_drain_IO_L3_out_serialize' with estimated II increased from II=1 to II=4 because of limited port on variable 'fifo_C_drain_local_in' (src/kernel_kernel.cpp:1164:21)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 512 in loop 'VITIS_LOOP_38_1'(src/kernel_kernel.cpp:38:19) has been inferred on port 'gmem_A'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (src/kernel_kernel.cpp:38:19)
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 512 in loop 'VITIS_LOOP_383_1'(src/kernel_kernel.cpp:383:20) has been inferred on port 'gmem_B'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (src/kernel_kernel.cpp:383:20)
+INFO: [HLS 214-115] Multiple burst writes of length 256 and bit width 512 in loop 'VITIS_LOOP_1164_1'(src/kernel_kernel.cpp:1164:21) has been inferred on port 'gmem_C'. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (src/kernel_kernel.cpp:1164:21)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i512.s_struct.ssdm_ints' into '_llvm.fpga.unpack.none.s_struct.ap_uints.i512.1'
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uints.i512.1' into 'A_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&) (.1)' (src/kernel_kernel.cpp:41:15)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_uint.13s' into 'A_IO_L2_in_intra_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<64>, 0>&, bool) (.1)' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uints.i512.1' into 'B_IO_L3_in_serialize(ap_uint<512>*, hls::stream<ap_uint<512>, 0>&) (.1)' (src/kernel_kernel.cpp:386:15)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_uint.13s' into 'B_IO_L2_in_intra_trans(int, int, int, int, ap_uint<512> (*) [1], hls::stream<ap_uint<64>, 0>&, bool) (.1)' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_uint.13s' into 'PE(int, int, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<float, 0>&) (.1)' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_uint.13s' into 'PE(int, int, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<float, 0>&) (.1)' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i128.s_struct.ap_uint.29s' into 'C_drain_IO_L1_out_boundary_wrapper(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&) (.1)' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i128.s_struct.ap_uint.29s' into 'C_drain_IO_L1_out(int, int, hls::stream<ap_uint<128>, 0>&, hls::stream<ap_uint<128>, 0>&, hls::stream<float, 0>&) (.1)' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i512.s_struct.ap_uints' into 'C_drain_IO_L3_out_serialize(ap_uint<512>*, hls::stream<ap_uint<128>, 0>&) (.1)' (src/kernel_kernel.cpp:1175:10)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 7.57 seconds. CPU system time: 0.79 seconds. Elapsed time: 8.45 seconds; current allocated memory: 258.127 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 258.128 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.18 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.2 seconds; current allocated memory: 281.200 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.33 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.36 seconds; current allocated memory: 320.662 MB.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_1164_1' (src/kernel_kernel.cpp:1168) in function 'C_drain_IO_L3_out_serialize' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_1170_2' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:0) in function 'C_drain_IO_L3_out_serialize' completely with a factor of 4.
+INFO: [XFORM 203-101] Partitioning array 'mem_data_split.V' (src/kernel_kernel.cpp:1168) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'data_split.V' (src/kernel_kernel.cpp:841) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'data_split.V' (src/kernel_kernel.cpp:841) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'data_split.V' (src/kernel_kernel.cpp:397) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'data_split.V' (src/kernel_kernel.cpp:52) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'data_split.V' (src/kernel_kernel.cpp:841) in dimension 1 completely.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'kernel0' (src/kernel_kernel.cpp:1193:1)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'kernel0' (src/kernel_kernel.cpp:1193:1), detected/extracted 25 process function(s): 
+	 'entry_proc'
+	 'A_IO_L3_in_serialize'
+	 'A_IO_L3_in'
+	 'A_IO_L2_in'
+	 'A_IO_L2_in_boundary'
+	 'B_IO_L3_in_serialize'
+	 'B_IO_L3_in'
+	 'B_IO_L2_in'
+	 'B_IO_L2_in_boundary'
+	 'PE_wrapper7'
+	 'PE_wrapper8'
+	 'PE_wrapper9'
+	 'PE_wrapper'
+	 'A_PE_dummy_in10'
+	 'A_PE_dummy_in'
+	 'B_PE_dummy_in11'
+	 'B_PE_dummy_in'
+	 'C_drain_IO_L1_out_boundary_wrapper12'
+	 'C_drain_IO_L1_out_wrapper13'
+	 'C_drain_IO_L1_out_boundary_wrapper'
+	 'C_drain_IO_L1_out_wrapper'
+	 'C_drain_IO_L2_out_boundary'
+	 'C_drain_IO_L2_out'
+	 'C_drain_IO_L3_out'
+	 'C_drain_IO_L3_out_serialize'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.95 seconds. CPU system time: 0.05 seconds. Elapsed time: 1 seconds; current allocated memory: 384.537 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_712_5' (src/kernel_kernel.cpp:712:45) in function 'PE'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_710_4' (src/kernel_kernel.cpp:710:43) in function 'PE'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_707_3' (src/kernel_kernel.cpp:707:41) in function 'PE'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_706_2' (src/kernel_kernel.cpp:706:39) in function 'PE'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_705_1' (src/kernel_kernel.cpp:705:36) in function 'PE'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1138_5' (src/kernel_kernel.cpp:1138:46) in function 'C_drain_IO_L3_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1136_4' (src/kernel_kernel.cpp:1136:44) in function 'C_drain_IO_L3_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1134_3' (src/kernel_kernel.cpp:1134:42) in function 'C_drain_IO_L3_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1131_2' (src/kernel_kernel.cpp:1131:40) in function 'C_drain_IO_L3_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1130_1' (src/kernel_kernel.cpp:1130:37) in function 'C_drain_IO_L3_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1105_5' (src/kernel_kernel.cpp:1105:48) in function 'C_drain_IO_L2_out_boundary'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1103_4' (src/kernel_kernel.cpp:1103:46) in function 'C_drain_IO_L2_out_boundary'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1097_2' (src/kernel_kernel.cpp:1097:40) in function 'C_drain_IO_L2_out_boundary'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1096_1' (src/kernel_kernel.cpp:1096:38) in function 'C_drain_IO_L2_out_boundary'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1052_5' (src/kernel_kernel.cpp:1052:48) in function 'C_drain_IO_L2_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1050_4' (src/kernel_kernel.cpp:1050:46) in function 'C_drain_IO_L2_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1069_8' (src/kernel_kernel.cpp:1069:48) in function 'C_drain_IO_L2_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1067_7' (src/kernel_kernel.cpp:1067:46) in function 'C_drain_IO_L2_out'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_1047_3' in function 'C_drain_IO_L2_out' more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1044_2' (src/kernel_kernel.cpp:1044:40) in function 'C_drain_IO_L2_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1043_1' (src/kernel_kernel.cpp:1043:38) in function 'C_drain_IO_L2_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_849_1' (src/kernel_kernel.cpp:851:39) in function 'C_drain_IO_L1_out_boundary_wrapper12'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_927_2' (src/kernel_kernel.cpp:929:43) in function 'C_drain_IO_L1_out_boundary_wrapper12'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_1001_2' (src/kernel_kernel.cpp:837:40) in function 'C_drain_IO_L1_out_boundary_wrapper12' more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1000_1' (src/kernel_kernel.cpp:1001:40) in function 'C_drain_IO_L1_out_boundary_wrapper12'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_849_1' (src/kernel_kernel.cpp:851:39) in function 'C_drain_IO_L1_out_boundary_wrapper'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_927_2' (src/kernel_kernel.cpp:929:43) in function 'C_drain_IO_L1_out_boundary_wrapper'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_1001_2' (src/kernel_kernel.cpp:837:40) in function 'C_drain_IO_L1_out_boundary_wrapper' more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_1000_1' (src/kernel_kernel.cpp:1001:40) in function 'C_drain_IO_L1_out_boundary_wrapper'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_849_1' (src/kernel_kernel.cpp:851:39) in function 'C_drain_IO_L1_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_885_2' (src/kernel_kernel.cpp:887:43) in function 'C_drain_IO_L1_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_899_4' (src/kernel_kernel.cpp:901:43) in function 'C_drain_IO_L1_out'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_882_1' in function 'C_drain_IO_L1_out' more than one sub loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_954_2' (src/kernel_kernel.cpp:837:40) in function 'C_drain_IO_L1_out' more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_953_1' (src/kernel_kernel.cpp:953:36) in function 'C_drain_IO_L1_out'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_823_5' (src/kernel_kernel.cpp:823:45) in function 'B_PE_dummy_in11'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_821_4' (src/kernel_kernel.cpp:821:43) in function 'B_PE_dummy_in11'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_818_3' (src/kernel_kernel.cpp:818:41) in function 'B_PE_dummy_in11'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_817_2' (src/kernel_kernel.cpp:817:39) in function 'B_PE_dummy_in11'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_816_1' (src/kernel_kernel.cpp:816:37) in function 'B_PE_dummy_in11'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_823_5' (src/kernel_kernel.cpp:823:45) in function 'B_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_821_4' (src/kernel_kernel.cpp:821:43) in function 'B_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_818_3' (src/kernel_kernel.cpp:818:41) in function 'B_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_817_2' (src/kernel_kernel.cpp:817:39) in function 'B_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_816_1' (src/kernel_kernel.cpp:816:37) in function 'B_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_358_4' (src/kernel_kernel.cpp:358:43) in function 'B_IO_L3_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_355_3' (src/kernel_kernel.cpp:355:41) in function 'B_IO_L3_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_354_2' (src/kernel_kernel.cpp:354:39) in function 'B_IO_L3_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_353_1' (src/kernel_kernel.cpp:353:36) in function 'B_IO_L3_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_409_2' (src/kernel_kernel.cpp:409:39) in function 'B_IO_L2_in_intra_trans'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_407_1' (src/kernel_kernel.cpp:407:37) in function 'B_IO_L2_in_intra_trans'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_442_1' in function 'B_IO_L2_in_inter_trans' more than one sub loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_797_5' (src/kernel_kernel.cpp:797:45) in function 'A_PE_dummy_in10'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_795_4' (src/kernel_kernel.cpp:795:43) in function 'A_PE_dummy_in10'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_792_3' (src/kernel_kernel.cpp:792:41) in function 'A_PE_dummy_in10'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_791_2' (src/kernel_kernel.cpp:791:39) in function 'A_PE_dummy_in10'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_790_1' (src/kernel_kernel.cpp:790:37) in function 'A_PE_dummy_in10'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_797_5' (src/kernel_kernel.cpp:797:45) in function 'A_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_795_4' (src/kernel_kernel.cpp:795:43) in function 'A_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_792_3' (src/kernel_kernel.cpp:792:41) in function 'A_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_791_2' (src/kernel_kernel.cpp:791:39) in function 'A_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_790_1' (src/kernel_kernel.cpp:790:37) in function 'A_PE_dummy_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_13_4' (src/kernel_kernel.cpp:13:42) in function 'A_IO_L3_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_10_3' (src/kernel_kernel.cpp:10:40) in function 'A_IO_L3_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_9_2' (src/kernel_kernel.cpp:9:37) in function 'A_IO_L3_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_8_1' (src/kernel_kernel.cpp:8:34) in function 'A_IO_L3_in'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_64_2' (src/kernel_kernel.cpp:64:38) in function 'A_IO_L2_in_intra_trans'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_62_1' (src/kernel_kernel.cpp:62:36) in function 'A_IO_L2_in_intra_trans'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_97_1' in function 'A_IO_L2_in_inter_trans' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'local_C' (src/kernel_kernel.cpp:742:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'local_B' (src/kernel_kernel.cpp:493:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'local_A' (src/kernel_kernel.cpp:148:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'local_C.V' (src/kernel_kernel.cpp:868:102)
+INFO: [HLS 200-472] Inferring partial write operation for 'local_C.V' (src/kernel_kernel.cpp:868:102)
+INFO: [HLS 200-472] Inferring partial write operation for 'local_B' (src/kernel_kernel.cpp:453:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'local_A' (src/kernel_kernel.cpp:108:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.79 seconds. CPU system time: 0.13 seconds. Elapsed time: 0.91 seconds; current allocated memory: 891.200 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel0' ...
+WARNING: [SYN 201-103] Legalizing function name 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI.1' to 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI_1'.
+WARNING: [SYN 201-103] Legalizing function name 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_' to 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_s'.
+WARNING: [SYN 201-103] Legalizing function name 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_899_4_VITIS_' to 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_899_4_VITIS_s'.
+WARNING: [SYN 201-103] Legalizing function name 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_885_2_VITIS_' to 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_885_2_VITIS_s'.
+WARNING: [SYN 201-103] Legalizing function name 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_.1' to 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_1'.
+WARNING: [SYN 201-103] Legalizing function name 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_' to 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.3 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.4 seconds; current allocated memory: 892.215 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 892.272 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_38_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_38_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 892.357 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 892.471 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L3_in_serialize' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 892.534 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 892.635 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L3_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_8_1_VITIS_LOOP_10_3_VITIS_LOOP_13_4_VITIS_LOOP_15_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_8_1_VITIS_LOOP_10_3_VITIS_LOOP_13_4_VITIS_LOOP_15_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 892.744 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 892.850 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_112_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_112_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_112_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 892.927 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 893.027 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_100_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_100_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_100_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 893.110 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 893.212 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L2_in_inter_trans' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 893.301 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 893.419 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_62_1_VI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_62_1_VITIS_LOOP_64_2_VITIS_LOOP_66_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_62_1_VITIS_LOOP_64_2_VITIS_LOOP_66_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 893.635 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 893.929 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L2_in_intra_trans' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 893.977 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 894.048 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L2_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 894.210 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 894.439 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L2_in_inter_trans_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_140_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_140_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 894.523 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 894.626 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_IO_L2_in_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 894.786 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 895.037 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_383_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_383_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 895.122 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 895.234 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L3_in_serialize' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 895.298 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 895.398 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L3_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_353_1_VITIS_LOOP_355_3_VITIS_LOOP_358_4_VITIS_LOOP_360_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_353_1_VITIS_LOOP_355_3_VITIS_LOOP_358_4_VITIS_LOOP_360_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 895.478 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 895.584 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_457_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_457_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_457_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 895.660 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 895.761 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_445_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_445_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_445_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 895.872 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 895.975 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L2_in_inter_trans' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 896.064 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 896.183 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_407_1_V' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_407_1_VITIS_LOOP_409_2_VITIS_LOOP_411_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_407_1_VITIS_LOOP_409_2_VITIS_LOOP_411_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 896.558 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 897.064 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L2_in_intra_trans' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 897.112 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 897.183 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L2_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 897.344 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 897.573 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L2_in_inter_trans_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_485_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_485_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 897.658 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 897.761 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_IO_L2_in_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 897.921 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 898.139 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_705_1_VITIS_LOOP_707_3_VITIS_LOOP_712_5_VITIS_LOOP_714_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 17, loop 'VITIS_LOOP_705_1_VITIS_LOOP_707_3_VITIS_LOOP_712_5_VITIS_LOOP_714_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 898.638 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'local_C' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 899.274 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_wrapper7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 899.321 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 899.415 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_wrapper8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 899.460 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 899.553 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_wrapper9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.2 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 899.599 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 899.693 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.2 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 899.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 899.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_PE_dummy_in10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_790_1_VITIS_LOOP_792_3_VITIS_LOOP_797_5_VITIS_LOOP_799_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_790_1_VITIS_LOOP_792_3_VITIS_LOOP_797_5_VITIS_LOOP_799_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 899.909 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 900.035 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'A_PE_dummy_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_790_1_VITIS_LOOP_792_3_VITIS_LOOP_797_5_VITIS_LOOP_799_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_790_1_VITIS_LOOP_792_3_VITIS_LOOP_797_5_VITIS_LOOP_799_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 900.111 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 900.207 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_PE_dummy_in11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_816_1_VITIS_LOOP_818_3_VITIS_LOOP_823_5_VITIS_LOOP_825_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_816_1_VITIS_LOOP_818_3_VITIS_LOOP_823_5_VITIS_LOOP_825_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 900.284 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 900.380 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'B_PE_dummy_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_816_1_VITIS_LOOP_818_3_VITIS_LOOP_823_5_VITIS_LOOP_825_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_816_1_VITIS_LOOP_818_3_VITIS_LOOP_823_5_VITIS_LOOP_825_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 900.457 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 900.553 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_849_1_VITIS_LOOP_851_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_849_1_VITIS_LOOP_851_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 900.728 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 900.984 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_927_2_VITIS_LOOP_929_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_927_2_VITIS_LOOP_929_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 901.116 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 901.278 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_boundary_wrapper12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 901.365 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 901.478 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_849_1_VITIS_LOOP_851_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_849_1_VITIS_LOOP_851_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 901.653 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 901.909 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_899_4_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_899_4_VITIS_LOOP_901_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_899_4_VITIS_LOOP_901_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 901.987 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 902.119 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_885_2_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_885_2_VITIS_LOOP_887_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_885_2_VITIS_LOOP_887_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 902.251 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 902.414 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 902.543 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 902.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_wrapper13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 902.752 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 902.825 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_849_1_VITIS_LOOP_851_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_849_1_VITIS_LOOP_851_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 902.999 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 903.257 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_927_2_VITIS_LOOP_929_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_927_2_VITIS_LOOP_929_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 903.389 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 903.579 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_boundary_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 903.666 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 903.779 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L1_out_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 903.820 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 903.892 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L2_out_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1096_1_VITIS_LOOP_1103_4_VITIS_LOOP_1105_5_VITIS_LOOP_1107_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1096_1_VITIS_LOOP_1103_4_VITIS_LOOP_1105_5_VITIS_LOOP_1107_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 903.974 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 904.083 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L2_out_Pipeline_VITIS_LOOP_1067_7_VITIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1067_7_VITIS_LOOP_1069_8_VITIS_LOOP_1071_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1067_7_VITIS_LOOP_1069_8_VITIS_LOOP_1071_9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 904.162 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 904.266 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L2_out_Pipeline_VITIS_LOOP_1050_4_VITIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1050_4_VITIS_LOOP_1052_5_VITIS_LOOP_1054_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1050_4_VITIS_LOOP_1052_5_VITIS_LOOP_1054_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 904.345 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 904.450 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L2_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 904.599 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 904.800 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L3_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1130_1_VITIS_LOOP_1134_3_VITIS_LOOP_1138_5_VITIS_LOOP_1141_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1130_1_VITIS_LOOP_1134_3_VITIS_LOOP_1138_5_VITIS_LOOP_1141_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 904.882 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 904.991 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1164_1'.
+WARNING: [HLS 200-880] The II Violation in module 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11' (loop 'VITIS_LOOP_1164_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between fifo read operation ('mem_data_split.V[1]', /mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145) on port 'fifo_C_drain_C_drain_IO_L3_out_serialize71' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read operation ('mem_data_split.V[0]', /mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145) on port 'fifo_C_drain_C_drain_IO_L3_out_serialize71' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-880] The II Violation in module 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11' (loop 'VITIS_LOOP_1164_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between fifo read operation ('mem_data_split.V[2]', /mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145) on port 'fifo_C_drain_C_drain_IO_L3_out_serialize71' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read operation ('mem_data_split.V[0]', /mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145) on port 'fifo_C_drain_C_drain_IO_L3_out_serialize71' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-880] The II Violation in module 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11' (loop 'VITIS_LOOP_1164_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between fifo read operation ('v1.V', /mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145) on port 'fifo_C_drain_C_drain_IO_L3_out_serialize71' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read operation ('mem_data_split.V[0]', /mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145) on port 'fifo_C_drain_C_drain_IO_L3_out_serialize71' (/mnt/raid10/tools/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:145).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 4, Depth = 6, loop 'VITIS_LOOP_1164_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 905.098 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 905.238 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'C_drain_IO_L3_out_serialize' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 905.311 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 905.409 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO C_c_channel (from entry_proc_U0 to C_drain_IO_L3_out_serialize_U0) to 12 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO fifo_C_drain_PE_0_0 (from PE_wrapper7_U0 to C_drain_IO_L1_out_wrapper13_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO fifo_C_drain_PE_0_1 (from PE_wrapper8_U0 to C_drain_IO_L1_out_wrapper_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO fifo_C_drain_C_drain_IO_L1_out_0_0 (from C_drain_IO_L1_out_wrapper13_U0 to C_drain_IO_L2_out_U0) to 4 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 905.755 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.59 seconds. CPU system time: 0 seconds. Elapsed time: 0.6 seconds; current allocated memory: 906.603 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.4 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.4 seconds; current allocated memory: 906.764 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1' pipeline 'VITIS_LOOP_38_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1/m_axi_gmem_A_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L3_in_serialize_Pipeline_VITIS_LOOP_38_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 907.318 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L3_in_serialize' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L3_in_serialize'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 908.229 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L3_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'A_IO_L3_in' pipeline 'VITIS_LOOP_8_1_VITIS_LOOP_10_3_VITIS_LOOP_13_4_VITIS_LOOP_15_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L3_in'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 908.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_112_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'A_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_112_3' pipeline 'VITIS_LOOP_112_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_112_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 909.471 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_100_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'A_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_100_2' pipeline 'VITIS_LOOP_100_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_100_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 909.995 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L2_in_inter_trans' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L2_in_inter_trans'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 910.656 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_62_1_VI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'A_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_62_1_VI' pipeline 'VITIS_LOOP_62_1_VITIS_LOOP_64_2_VITIS_LOOP_66_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_83_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_62_1_VI'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 911.563 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L2_in_intra_trans' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L2_in_intra_trans'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 912.736 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L2_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L2_in'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 913.423 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L2_in_inter_trans_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'A_IO_L2_in_inter_trans_boundary' pipeline 'VITIS_LOOP_140_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L2_in_inter_trans_boundary'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 914.532 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_IO_L2_in_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_IO_L2_in_boundary'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 915.341 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1' pipeline 'VITIS_LOOP_383_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1/m_axi_gmem_B_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L3_in_serialize_Pipeline_VITIS_LOOP_383_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 916.581 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L3_in_serialize' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L3_in_serialize'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 917.549 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L3_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'B_IO_L3_in' pipeline 'VITIS_LOOP_353_1_VITIS_LOOP_355_3_VITIS_LOOP_358_4_VITIS_LOOP_360_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L3_in'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 918.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_457_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'B_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_457_3' pipeline 'VITIS_LOOP_457_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_457_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 918.720 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_445_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'B_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_445_2' pipeline 'VITIS_LOOP_445_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L2_in_inter_trans_Pipeline_VITIS_LOOP_445_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 919.304 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L2_in_inter_trans' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L2_in_inter_trans'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 920.011 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_407_1_V' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'B_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_407_1_V' pipeline 'VITIS_LOOP_407_1_VITIS_LOOP_409_2_VITIS_LOOP_411_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_83_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L2_in_intra_trans_Pipeline_VITIS_LOOP_407_1_V'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 921.298 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L2_in_intra_trans' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L2_in_intra_trans'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.32 seconds; current allocated memory: 923.260 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L2_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L2_in'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 923.992 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L2_in_inter_trans_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'B_IO_L2_in_inter_trans_boundary' pipeline 'VITIS_LOOP_485_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L2_in_inter_trans_boundary'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.26 seconds. CPU system time: 0 seconds. Elapsed time: 0.26 seconds; current allocated memory: 925.114 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_IO_L2_in_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_IO_L2_in_boundary'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 925.983 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'PE' pipeline 'VITIS_LOOP_705_1_VITIS_LOOP_707_3_VITIS_LOOP_712_5_VITIS_LOOP_714_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.29 seconds; current allocated memory: 928.181 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_wrapper7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_wrapper7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.63 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.63 seconds; current allocated memory: 931.025 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_wrapper8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_wrapper8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 931.525 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_wrapper9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_wrapper9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 931.979 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_wrapper'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 932.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_PE_dummy_in10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'A_PE_dummy_in10' pipeline 'VITIS_LOOP_790_1_VITIS_LOOP_792_3_VITIS_LOOP_797_5_VITIS_LOOP_799_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_PE_dummy_in10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 932.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'A_PE_dummy_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'A_PE_dummy_in' pipeline 'VITIS_LOOP_790_1_VITIS_LOOP_792_3_VITIS_LOOP_797_5_VITIS_LOOP_799_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'A_PE_dummy_in'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 933.436 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_PE_dummy_in11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'B_PE_dummy_in11' pipeline 'VITIS_LOOP_816_1_VITIS_LOOP_818_3_VITIS_LOOP_823_5_VITIS_LOOP_825_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_PE_dummy_in11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 934.019 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'B_PE_dummy_in' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'B_PE_dummy_in' pipeline 'VITIS_LOOP_816_1_VITIS_LOOP_818_3_VITIS_LOOP_823_5_VITIS_LOOP_825_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'B_PE_dummy_in'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 934.572 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI_1' pipeline 'VITIS_LOOP_849_1_VITIS_LOOP_851_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 935.331 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI' pipeline 'VITIS_LOOP_927_2_VITIS_LOOP_929_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_boundary_wrapper12_Pipeline_VITI'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 936.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_boundary_wrapper12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_boundary_wrapper12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 937.523 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_s' pipeline 'VITIS_LOOP_849_1_VITIS_LOOP_851_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_849_1_VITIS_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 938.413 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_899_4_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_899_4_VITIS_s' pipeline 'VITIS_LOOP_899_4_VITIS_LOOP_901_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_899_4_VITIS_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 939.550 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_885_2_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_885_2_VITIS_s' pipeline 'VITIS_LOOP_885_2_VITIS_LOOP_887_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_Pipeline_VITIS_LOOP_885_2_VITIS_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 940.192 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 941.296 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_wrapper13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_wrapper13'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 942.146 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_1' pipeline 'VITIS_LOOP_849_1_VITIS_LOOP_851_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 942.805 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_s' pipeline 'VITIS_LOOP_927_2_VITIS_LOOP_929_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_boundary_wrapper_Pipeline_VITIS_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 944.031 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_boundary_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_boundary_wrapper'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 945.004 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L1_out_wrapper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L1_out_wrapper'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 945.701 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L2_out_boundary' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L2_out_boundary' pipeline 'VITIS_LOOP_1096_1_VITIS_LOOP_1103_4_VITIS_LOOP_1105_5_VITIS_LOOP_1107_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L2_out_boundary'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 946.146 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L2_out_Pipeline_VITIS_LOOP_1067_7_VITIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L2_out_Pipeline_VITIS_LOOP_1067_7_VITIS' pipeline 'VITIS_LOOP_1067_7_VITIS_LOOP_1069_8_VITIS_LOOP_1071_9' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L2_out_Pipeline_VITIS_LOOP_1067_7_VITIS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 946.755 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L2_out_Pipeline_VITIS_LOOP_1050_4_VITIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L2_out_Pipeline_VITIS_LOOP_1050_4_VITIS' pipeline 'VITIS_LOOP_1050_4_VITIS_LOOP_1052_5_VITIS_LOOP_1054_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L2_out_Pipeline_VITIS_LOOP_1050_4_VITIS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 947.362 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L2_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L2_out'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 948.124 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L3_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L3_out' pipeline 'VITIS_LOOP_1130_1_VITIS_LOOP_1134_3_VITIS_LOOP_1138_5_VITIS_LOOP_1141_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L3_out'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 949.128 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11' pipeline 'VITIS_LOOP_1164_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11/m_axi_gmem_C_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 949.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'C_drain_IO_L3_out_serialize' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'C_drain_IO_L3_out_serialize'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 951.088 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel0/gmem_A' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel0/gmem_B' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel0/gmem_C' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel0/A' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel0/B' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel0/C' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel0' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'A', 'B', 'C' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel0'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 955.490 MB.
+INFO: [RTMG 210-278] Implementing memory 'kernel0_A_IO_L2_in_local_A_ping_V_ram (RAM_2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'kernel0_PE_local_C_ram (RAM_2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'kernel0_C_drain_IO_L1_out_boundary_wrapper12_local_C_V_ram (RAM_2P_BRAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'C_c_channel_U(kernel0_fifo_w64_d12_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_A_A_IO_L3_in_serialize_U(kernel0_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_A_A_IO_L2_in_0_U(kernel0_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_A_A_IO_L2_in_1_U(kernel0_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_A_PE_0_0_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_A_PE_1_0_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_B_B_IO_L3_in_serialize_U(kernel0_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_B_B_IO_L2_in_0_U(kernel0_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_B_B_IO_L2_in_1_U(kernel0_fifo_w512_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_B_PE_0_0_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_B_PE_0_1_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_A_PE_0_1_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_B_PE_1_0_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_PE_0_0_U(kernel0_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_A_PE_0_2_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_B_PE_1_1_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_PE_0_1_U(kernel0_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_A_PE_1_1_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_B_PE_2_0_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_PE_1_0_U(kernel0_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_A_PE_1_2_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_B_PE_2_1_U(kernel0_fifo_w64_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_PE_1_1_U(kernel0_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_C_drain_IO_L1_out_0_1_U(kernel0_fifo_w128_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_C_drain_IO_L1_out_0_0_U(kernel0_fifo_w128_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_C_drain_IO_L1_out_1_1_U(kernel0_fifo_w128_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_C_drain_IO_L1_out_1_0_U(kernel0_fifo_w128_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_C_drain_IO_L2_out_1_U(kernel0_fifo_w128_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_C_drain_IO_L2_out_0_U(kernel0_fifo_w128_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fifo_C_drain_C_drain_IO_L3_out_serialize_U(kernel0_fifo_w128_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_A_IO_L3_in_U0_U(kernel0_start_for_A_IO_L3_in_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_A_IO_L2_in_U0_U(kernel0_start_for_A_IO_L2_in_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_A_IO_L2_in_boundary_U0_U(kernel0_start_for_A_IO_L2_in_boundary_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_wrapper7_U0_U(kernel0_start_for_PE_wrapper7_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_wrapper9_U0_U(kernel0_start_for_PE_wrapper9_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_B_IO_L3_in_U0_U(kernel0_start_for_B_IO_L3_in_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_B_IO_L2_in_U0_U(kernel0_start_for_B_IO_L2_in_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_B_IO_L2_in_boundary_U0_U(kernel0_start_for_B_IO_L2_in_boundary_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_wrapper8_U0_U(kernel0_start_for_PE_wrapper8_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_C_drain_IO_L1_out_wrapper13_U0_U(kernel0_start_for_C_drain_IO_L1_out_wrapper13_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_wrapper_U0_U(kernel0_start_for_PE_wrapper_U0)' using Shift Registers.

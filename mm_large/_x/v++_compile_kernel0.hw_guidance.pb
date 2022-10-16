@@ -1,0 +1,3 @@
+
+Ý
+v++_compile_kernel0.hw$82022bf8-b26f-4d68-afab-3f3ddb8df772Év++  -s -t hw --platform xilinx_u250_xdma_201830_2 -R2 -O3 --kernel_frequency 300 --vivado.prop=run.impl_1.STRATEGY=Performance_EarlyBlockPlacement -c -k kernel0 -o kernel0.hw.xo src/kernel_kernel.cpp *r"n/home/jiaqiyin/autosa_output/autosa_output/mm_large/_x/reports/kernel0.hw/v++_compile_kernel0.hw_guidance.html2]"Y/home/jiaqiyin/autosa_output/autosa_output/mm_large/_x/v++_compile_kernel0.hw_guidance.pb

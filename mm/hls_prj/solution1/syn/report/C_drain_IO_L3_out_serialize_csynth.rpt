@@ -1,0 +1,208 @@
+
+
+================================================================
+== Vitis HLS Report for 'C_drain_IO_L3_out_serialize'
+================================================================
+* Date:           Sat Oct 15 10:48:55 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        hls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.650 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   |  min |  max |   Type  |
+    +---------+---------+----------+----------+------+------+---------+
+    |     1037|     1037|  5.185 us|  5.185 us|  1037|  1037|       no|
+    +---------+---------+----------+----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------------+----------------------------------------------------+---------+---------+----------+----------+------+------+---------+
+        |                                                              |                                                    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+        |                           Instance                           |                       Module                       |   min   |   max   |    min   |    max   |  min |  max |   Type  |
+        +--------------------------------------------------------------+----------------------------------------------------+---------+---------+----------+----------+------+------+---------+
+        |grp_C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11_fu_54  |C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11  |     1030|     1030|  5.150 us|  5.150 us|  1030|  1030|       no|
+        +--------------------------------------------------------------+----------------------------------------------------+---------+---------+----------+----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|        2|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|      531|      137|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|      231|    -|
+|Register             |        -|     -|       68|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|      599|      370|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1440|  2280|   788160|   394080|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4320|  6840|  2364480|  1182240|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+-----+-----+-----+
+    |                           Instance                           |                       Module                       | BRAM_18K| DSP|  FF | LUT | URAM|
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+-----+-----+-----+
+    |grp_C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11_fu_54  |C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11  |        0|   0|  531|  137|    0|
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+-----+-----+-----+
+    |Total                                                         |                                                    |        0|   0|  531|  137|    0|
+    +--------------------------------------------------------------+----------------------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |                       Name                      | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                        |  49|          9|    1|          9|
+    |ap_done                                          |   9|          2|    1|          2|
+    |fifo_C_drain_C_drain_IO_L3_out_serialize71_read  |   9|          2|    1|          2|
+    |gmem_C_blk_n_AW                                  |   9|          2|    1|          2|
+    |gmem_C_blk_n_B                                   |   9|          2|    1|          2|
+    |m_axi_gmem_C_AWADDR                              |  14|          3|   64|        192|
+    |m_axi_gmem_C_AWBURST                             |   9|          2|    2|          4|
+    |m_axi_gmem_C_AWCACHE                             |   9|          2|    4|          8|
+    |m_axi_gmem_C_AWID                                |   9|          2|    1|          2|
+    |m_axi_gmem_C_AWLEN                               |  14|          3|   32|         96|
+    |m_axi_gmem_C_AWLOCK                              |   9|          2|    2|          4|
+    |m_axi_gmem_C_AWPROT                              |   9|          2|    3|          6|
+    |m_axi_gmem_C_AWQOS                               |   9|          2|    4|          8|
+    |m_axi_gmem_C_AWREGION                            |   9|          2|    4|          8|
+    |m_axi_gmem_C_AWSIZE                              |   9|          2|    3|          6|
+    |m_axi_gmem_C_AWUSER                              |   9|          2|    1|          2|
+    |m_axi_gmem_C_AWVALID                             |  14|          3|    1|          3|
+    |m_axi_gmem_C_BREADY                              |  14|          3|    1|          3|
+    |m_axi_gmem_C_WVALID                              |   9|          2|    1|          2|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                            | 231|         49|  128|        361|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                    Name                                   | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                  |   8|   0|    8|          0|
+    |ap_done_reg                                                                |   1|   0|    1|          0|
+    |grp_C_drain_IO_L3_out_serialize_Pipeline_VITIS_LOOP_11_fu_54_ap_start_reg  |   1|   0|    1|          0|
+    |trunc_ln_reg_84                                                            |  58|   0|   58|          0|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                      |  68|   0|   68|          0|
+    +---------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------------------------+-----+-----+------------+--------------------------------------------+--------------+
+|                      RTL Ports                     | Dir | Bits|  Protocol  |                Source Object               |    C Type    |
++----------------------------------------------------+-----+-----+------------+--------------------------------------------+--------------+
+|ap_clk                                              |   in|    1|  ap_ctrl_hs|                 C_drain_IO_L3_out_serialize|  return value|
+|ap_rst                                              |   in|    1|  ap_ctrl_hs|                 C_drain_IO_L3_out_serialize|  return value|
+|ap_start                                            |   in|    1|  ap_ctrl_hs|                 C_drain_IO_L3_out_serialize|  return value|
+|ap_done                                             |  out|    1|  ap_ctrl_hs|                 C_drain_IO_L3_out_serialize|  return value|
+|ap_continue                                         |   in|    1|  ap_ctrl_hs|                 C_drain_IO_L3_out_serialize|  return value|
+|ap_idle                                             |  out|    1|  ap_ctrl_hs|                 C_drain_IO_L3_out_serialize|  return value|
+|ap_ready                                            |  out|    1|  ap_ctrl_hs|                 C_drain_IO_L3_out_serialize|  return value|
+|m_axi_gmem_C_AWVALID                                |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWREADY                                |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWADDR                                 |  out|   64|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWID                                   |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWLEN                                  |  out|   32|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWSIZE                                 |  out|    3|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWBURST                                |  out|    2|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWLOCK                                 |  out|    2|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWCACHE                                |  out|    4|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWPROT                                 |  out|    3|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWQOS                                  |  out|    4|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWREGION                               |  out|    4|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_AWUSER                                 |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_WVALID                                 |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_WREADY                                 |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_WDATA                                  |  out|  512|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_WSTRB                                  |  out|   64|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_WLAST                                  |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_WID                                    |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_WUSER                                  |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARVALID                                |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARREADY                                |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARADDR                                 |  out|   64|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARID                                   |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARLEN                                  |  out|   32|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARSIZE                                 |  out|    3|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARBURST                                |  out|    2|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARLOCK                                 |  out|    2|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARCACHE                                |  out|    4|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARPROT                                 |  out|    3|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARQOS                                  |  out|    4|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARREGION                               |  out|    4|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_ARUSER                                 |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_RVALID                                 |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_RREADY                                 |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_RDATA                                  |   in|  512|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_RLAST                                  |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_RID                                    |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_RUSER                                  |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_RRESP                                  |   in|    2|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_BVALID                                 |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_BREADY                                 |  out|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_BRESP                                  |   in|    2|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_BID                                    |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|m_axi_gmem_C_BUSER                                  |   in|    1|       m_axi|                                      gmem_C|       pointer|
+|p_read                                              |   in|   64|     ap_none|                                      p_read|        scalar|
+|fifo_C_drain_C_drain_IO_L3_out_serialize71_dout     |   in|  128|     ap_fifo|  fifo_C_drain_C_drain_IO_L3_out_serialize71|       pointer|
+|fifo_C_drain_C_drain_IO_L3_out_serialize71_empty_n  |   in|    1|     ap_fifo|  fifo_C_drain_C_drain_IO_L3_out_serialize71|       pointer|
+|fifo_C_drain_C_drain_IO_L3_out_serialize71_read     |  out|    1|     ap_fifo|  fifo_C_drain_C_drain_IO_L3_out_serialize71|       pointer|
++----------------------------------------------------+-----+-----+------------+--------------------------------------------+--------------+
+

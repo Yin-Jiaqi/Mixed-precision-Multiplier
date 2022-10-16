@@ -1,0 +1,137 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src/kernel_host.cpp in debug mode
+   Compiling ../../../../src/kernel_kernel.cpp in debug mode
+In file included from ../../../../src/kernel_kernel.cpp:1:0:
+../../../../src/kernel_kernel.cpp: In function ‘void A_IO_L3_in(hls::stream<ap_uint<512> >&, hls::stream<ap_uint<512> >&)’:
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:12:28: note: in expansion of macro ‘min’
+     for (int c4 = 0; c4 <= min(19, -20 * c3 + 207); c4 += 1) {
+                            ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:12:28: note: in expansion of macro ‘min’
+     for (int c4 = 0; c4 <= min(19, -20 * c3 + 207); c4 += 1) {
+                            ^~~
+../../../../src/kernel_kernel.cpp: In function ‘void A_IO_L2_in_inter_trans(int, A_t16 (*)[16], hls::stream<ap_uint<512> >&, hls::stream<ap_uint<512> >&, bool)’:
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:116:30: note: in expansion of macro ‘min’
+       for (int c4 = 0; c4 <= min(19, -20 * c3 + 207); c4 += 1) {
+                              ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:116:30: note: in expansion of macro ‘min’
+       for (int c4 = 0; c4 <= min(19, -20 * c3 + 207); c4 += 1) {
+                              ^~~
+../../../../src/kernel_kernel.cpp: In function ‘void PE(int, int, hls::stream<ap_uint<256> >&, hls::stream<ap_uint<256> >&, hls::stream<ap_uint<256> >&, hls::stream<ap_uint<256> >&, hls::stream<int>&)’:
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:637:34: note: in expansion of macro ‘min’
+           for (int c7 = 0; c7 <= min(19, -20 * c3 + 207); c7 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:637:34: note: in expansion of macro ‘min’
+           for (int c7 = 0; c7 <= min(19, -20 * c3 + 207); c7 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.cpp: In function ‘void A_PE_dummy_in(int, int, hls::stream<ap_uint<256> >&)’:
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:740:34: note: in expansion of macro ‘min’
+           for (int c7 = 0; c7 <= min(19, -20 * c3 + 207); c7 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:740:34: note: in expansion of macro ‘min’
+           for (int c7 = 0; c7 <= min(19, -20 * c3 + 207); c7 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.cpp: In function ‘void B_PE_dummy_in(int, int, hls::stream<ap_uint<256> >&)’:
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:766:34: note: in expansion of macro ‘min’
+           for (int c7 = 0; c7 <= min(19, -20 * c3 + 207); c7 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:766:34: note: in expansion of macro ‘min’
+           for (int c7 = 0; c7 <= min(19, -20 * c3 + 207); c7 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.cpp: In function ‘void C_drain_IO_L1_out_inter_trans(int, int, int, C_t4 (*)[4], hls::stream<ap_uint<128> >&, hls::stream<ap_uint<128> >&)’:
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:841:30: note: in expansion of macro ‘min’
+       for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                              ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:841:30: note: in expansion of macro ‘min’
+       for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                              ^~~
+../../../../src/kernel_kernel.cpp: In function ‘void C_drain_IO_L2_out(int, hls::stream<ap_uint<128> >&, hls::stream<ap_uint<128> >&, hls::stream<ap_uint<128> >&)’:
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:987:34: note: in expansion of macro ‘min’
+           for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:987:34: note: in expansion of macro ‘min’
+           for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:1004:34: note: in expansion of macro ‘min’
+           for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:1004:34: note: in expansion of macro ‘min’
+           for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.cpp: In function ‘void C_drain_IO_L2_out_boundary(int, hls::stream<ap_uint<128> >&, hls::stream<ap_uint<128> >&)’:
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:1039:34: note: in expansion of macro ‘min’
+           for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:1039:34: note: in expansion of macro ‘min’
+           for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                                  ^~~
+../../../../src/kernel_kernel.cpp: In function ‘void C_drain_IO_L3_out(hls::stream<ap_uint<128> >&, hls::stream<ap_uint<128> >&)’:
+../../../../src/kernel_kernel.h:4:27: error: operands to ?: have different types ‘int’ and ‘ap_int_base<37, true>::RType<32, true>::plus {aka ap_int<38>}’
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:1071:32: note: in expansion of macro ‘min’
+         for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                                ^~~
+../../../../src/kernel_kernel.h:4:27: note:   and each type can be converted to the other
+ #define min(x,y) ((x < y) ? x : y)
+                            
+../../../../src/kernel_kernel.cpp:1071:32: note: in expansion of macro ‘min’
+         for (int c5 = 0; c5 <= min(19, -20 * c4 + 207); c5 += 1) {
+                                ^~~
+make: *** [obj/kernel_kernel.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

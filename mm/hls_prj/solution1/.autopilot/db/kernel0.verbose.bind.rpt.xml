@@ -1,0 +1,70 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'kernel0'" level="0">
+<item name = "Date">Sat Oct 15 10:48:46 2022
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)</item>
+<item name = "Project">hls_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu200-fsgd2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.650 ns, 1.35 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">32800, 33783, 0.164 ms, 0.169 ms, 32787, 33776, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_A_IO_L3_in_serialize_fu_318">A_IO_L3_in_serialize, 1035, 1035, 5.175 us, 5.175 us, 1035, 1035, no</column>
+<column name="grp_B_IO_L3_in_serialize_fu_326">B_IO_L3_in_serialize, 1035, 1035, 5.175 us, 5.175 us, 1035, 1035, no</column>
+<column name="grp_A_IO_L3_in_fu_334">A_IO_L3_in, 1026, 1026, 5.130 us, 5.130 us, 1026, 1026, no</column>
+<column name="grp_B_IO_L3_in_fu_340">B_IO_L3_in, 1026, 1026, 5.130 us, 5.130 us, 1026, 1026, no</column>
+<column name="grp_A_IO_L2_in_fu_346">A_IO_L2_in, 1771, 33645, 8.855 us, 0.168 ms, 1771, 33645, no</column>
+<column name="grp_B_IO_L2_in_fu_353">B_IO_L2_in, 1771, 33775, 8.855 us, 0.169 ms, 1771, 33775, no</column>
+<column name="grp_A_IO_L2_in_boundary_fu_360">A_IO_L2_in_boundary, 811, 33645, 4.055 us, 0.168 ms, 811, 33645, no</column>
+<column name="grp_B_IO_L2_in_boundary_fu_366">B_IO_L2_in_boundary, 811, 33775, 4.055 us, 0.169 ms, 811, 33775, no</column>
+<column name="grp_PE_wrapper7_fu_372">PE_wrapper7, 32786, 32786, 0.164 ms, 0.164 ms, 32786, 32786, no</column>
+<column name="grp_PE_wrapper8_fu_381">PE_wrapper8, 32786, 32786, 0.164 ms, 0.164 ms, 32786, 32786, no</column>
+<column name="grp_PE_wrapper9_fu_390">PE_wrapper9, 32786, 32786, 0.164 ms, 0.164 ms, 32786, 32786, no</column>
+<column name="grp_PE_wrapper_fu_399">PE_wrapper, 32786, 32786, 0.164 ms, 0.164 ms, 32786, 32786, no</column>
+<column name="grp_A_PE_dummy_in10_fu_408">A_PE_dummy_in10, 32770, 32770, 0.164 ms, 0.164 ms, 32770, 32770, no</column>
+<column name="grp_B_PE_dummy_in11_fu_413">B_PE_dummy_in11, 32770, 32770, 0.164 ms, 0.164 ms, 32770, 32770, no</column>
+<column name="grp_C_drain_IO_L1_out_boundary_wrapper12_fu_418">C_drain_IO_L1_out_boundary_wrapper12, 1425, 1425, 7.125 us, 7.125 us, 1425, 1425, no</column>
+<column name="grp_A_PE_dummy_in_fu_424">A_PE_dummy_in, 32770, 32770, 0.164 ms, 0.164 ms, 32770, 32770, no</column>
+<column name="grp_B_PE_dummy_in_fu_429">B_PE_dummy_in, 32770, 32770, 0.164 ms, 0.164 ms, 32770, 32770, no</column>
+<column name="grp_C_drain_IO_L1_out_wrapper13_fu_434">C_drain_IO_L1_out_wrapper13, 1762, 1762, 8.810 us, 8.810 us, 1762, 1762, no</column>
+<column name="grp_C_drain_IO_L1_out_boundary_wrapper_fu_441">C_drain_IO_L1_out_boundary_wrapper, 1425, 1425, 7.125 us, 7.125 us, 1425, 1425, no</column>
+<column name="grp_C_drain_IO_L1_out_wrapper_fu_447">C_drain_IO_L1_out_wrapper, 1762, 1762, 8.810 us, 8.810 us, 1762, 1762, no</column>
+<column name="grp_C_drain_IO_L2_out_boundary_fu_454">C_drain_IO_L2_out_boundary, 514, 514, 2.570 us, 2.570 us, 514, 514, no</column>
+<column name="grp_C_drain_IO_L2_out_fu_460">C_drain_IO_L2_out, 1153, 1153, 5.765 us, 5.765 us, 1153, 1153, no</column>
+<column name="grp_C_drain_IO_L3_out_fu_467">C_drain_IO_L3_out, 1026, 1026, 5.130 us, 5.130 us, 1026, 1026, no</column>
+<column name="C_c_channel_entry_proc_fu_473">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_C_drain_IO_L3_out_serialize_fu_478">C_drain_IO_L3_out_serialize, 1037, 1037, 5.185 us, 5.185 us, 1037, 1037, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
